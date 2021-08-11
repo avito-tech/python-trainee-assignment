@@ -37,3 +37,22 @@
 - Решение задачи необходимо разместить на одном из публичных git-хостингов (GitHub, GitLab, Bitbucket). Можно также выслать решение в виде архива (zip, tar). Загружать библиотеку в PyPi или другие репозитории не требуется.
 
 ## Проверка решения
+
+- Для самостоятельной проверки можно использовать следующий test case:
+
+    ```python
+    SOURCE_URL = 'https://raw.githubusercontent.com/avito-tech/python-trainee-assignment/main/matrix.txt'
+    TRAVERSAL = [
+        10, 50, 90, 130,
+        140, 150, 160, 120,
+        80, 40, 30, 20,
+        60, 100, 110, 70,
+    ]
+
+    def test_get_matrix():
+        assert asyncio.run(get_matrix(SOURCE_URL)) == TRAVERSAL
+    ```
+
+При проверке мы также будем обращать внимание на тесты, type hints, структуру решения и общее качество кода.
+
+Удачи в выполнении задачи и не забывайте о [The Zen of Python](https://www.python.org/dev/peps/pep-0020/#the-zen-of-python)! :)
